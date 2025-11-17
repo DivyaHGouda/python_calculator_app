@@ -1,28 +1,13 @@
-def calculator():
-    print("Simple Python Calculator")
-    print("------------------------")
-    print("1. Add")
-    print("2. Subtract")
-    print("3. Multiply")
-    print("4. Divide")
+def add(a, b):
+    return a + b
 
-    choice = input("Enter choice (1/2/3/4): ")
+def subtract(a, b):
+    return a - b
 
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
+def multiply(a, b):
+    return a * b
 
-    if choice == "1":
-        print("Result:", num1 + num2)
-    elif choice == "2":
-        print("Result:", num1 - num2)
-    elif choice == "3":
-        print("Result:", num1 * num2)
-    elif choice == "4":
-        if num2 != 0:
-            print("Result:", num1 / num2)
-        else:
-            print("Error: Cannot divide by zero!")
-    else:
-        print("Invalid choice")
-
-calculator()
+def divide(a, b):
+    if b == 0:
+        return "Cannot divide by zero"
+    return a / b
